@@ -1,0 +1,455 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{692C9758-08EB-4D7D-9903-81146752A5E2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>XModel</RootNamespace>
+    <AssemblyName>XModel</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ZedGraph">
+      <HintPath>..\..\ZedGraph_Control_Test\ZedGraph.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="bak\Form_port.Designer.bak.cs" />
+    <Compile Include="BasicLibrary\HeartRateMonitor.cs" />
+    <Compile Include="BasicLibrary\TemperatureMonitor.cs" />
+    <Compile Include="BasicLibrary\BloodPressureMonitor.cs" />
+    <Compile Include="BasicLibrary\MyMonitor.cs" />
+    <Compile Include="BasicLibrary\RouteModule.cs" />
+    <Compile Include="CMIoTLibrary\Channel802_11.cs" />
+    <Compile Include="CMIoTLibrary\ChannelEthernet.cs" />
+    <Compile Include="CMIoTLibrary\Channel802_15_1.cs" />
+    <Compile Include="CMIoTLibrary\HeartRateSensorNode.cs" />
+    <Compile Include="CMIoTLibrary\MedicalServer.cs" />
+    <Compile Include="CMIoTLibrary\IPv6Router.cs" />
+    <Compile Include="CMIoTLibrary\IoTGateway.cs" />
+    <Compile Include="CMIoTLibrary\TemperatureSensorNode.cs" />
+    <Compile Include="CMIoTLibrary\BloodPressureSensorNode.cs" />
+    <Compile Include="CMIoTLibrary\Patient.cs" />
+    <Compile Include="CMIoTLibrary\Channel802_15_4.cs" />
+    <Compile Include="DataFrameStruct.cs" />
+    <Compile Include="DisplayForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DisplayForm.Designer.cs">
+      <DependentUpon>DisplayForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_BloodPressureMonitorcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_BloodPressureMonitorcs.Designer.cs">
+      <DependentUpon>Form_BloodPressureMonitorcs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_HeartRateMonitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_HeartRateMonitor.Designer.cs">
+      <DependentUpon>Form_HeartRateMonitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_TemperatureMonitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_TemperatureMonitor.Designer.cs">
+      <DependentUpon>Form_TemperatureMonitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_componentName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_componentName.Designer.cs">
+      <DependentUpon>Form_componentName.cs</DependentUpon>
+    </Compile>
+    <None Include="bak\Form_monitor.cs.bak">
+      <SubType>Form</SubType>
+    </None>
+    <Compile Include="bak\Form_monitor.Designer.cs">
+      <DependentUpon>Form_monitor.cs.bak</DependentUpon>
+    </Compile>
+    <Compile Include="Form_MedicalDataMonitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_MedicalDataMonitor.Designer.cs">
+      <DependentUpon>Form_MedicalDataMonitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_monitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_monitor.Designer.cs">
+      <DependentUpon>Form_monitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsideForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsideForm.Designer.cs">
+      <DependentUpon>InsideForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_portName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_portName.Designer.cs">
+      <DependentUpon>Form_portName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MedicalData.cs" />
+    <Compile Include="Resource1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource1.resx</DependentUpon>
+    </Compile>
+    <Compile Include="test\Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="test\Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="test\Form5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="test\Form5.Designer.cs">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="test\RealChart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="test\RealChart.Designer.cs">
+      <DependentUpon>RealChart.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DisplayForm.resx">
+      <DependentUpon>DisplayForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_BloodPressureMonitorcs.resx">
+      <DependentUpon>Form_BloodPressureMonitorcs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_HeartRateMonitor.resx">
+      <DependentUpon>Form_HeartRateMonitor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_TemperatureMonitor.resx">
+      <DependentUpon>Form_TemperatureMonitor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_componentName.resx">
+      <DependentUpon>Form_componentName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bak\Form_monitor.resx">
+      <DependentUpon>Form_monitor.cs.bak</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_MedicalDataMonitor.resx">
+      <DependentUpon>Form_MedicalDataMonitor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_monitor.resx">
+      <DependentUpon>Form_monitor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsideForm.resx">
+      <DependentUpon>InsideForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_portName.resx">
+      <DependentUpon>Form_portName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource1.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="test\Form4.resx">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="test\Form5.resx">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="test\RealChart.resx">
+      <DependentUpon>RealChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="bak\Component.cs.bak" />
+    <Compile Include="BasicLibrary\BloodPressureSensor.cs" />
+    <Compile Include="BasicLibrary\BloodPressure.cs" />
+    <Compile Include="BasicLibrary\DisplayController.cs" />
+    <Compile Include="BasicLibrary\AudioController.cs" />
+    <Compile Include="BasicLibrary\ElectricMachineryController.cs" />
+    <Compile Include="BasicLibrary\MicroProcessor.cs" />
+    <Compile Include="BasicLibrary\ProtocolConverter.cs" />
+    <Compile Include="BasicLibrary\DataProcessor.cs" />
+    <Compile Include="BasicLibrary\DataAnalyzer.cs" />
+    <Compile Include="BasicLibrary\WiredModule.cs" />
+    <Compile Include="BasicLibrary\WirelessModule.cs" />
+    <Compile Include="BasicLibrary\WiredMedia.cs" />
+    <Compile Include="BasicLibrary\WirelessMedia.cs" />
+    <Compile Include="BasicLibrary\Register.cs" />
+    <Compile Include="BasicLibrary\RAM.cs" />
+    <Compile Include="BasicLibrary\ROM.cs" />
+    <Compile Include="BasicLibrary\DataMemory.cs" />
+    <Compile Include="BasicLibrary\MyBuffer.cs" />
+    <Compile Include="BasicLibrary\HeartRate.cs" />
+    <Compile Include="BasicLibrary\HeartRateSensor.cs" />
+    <Compile Include="BasicLibrary\TemperatureSensor.cs" />
+    <Compile Include="BasicLibrary\Temperature.cs" />
+    <Compile Include="bak\Component_old.cs" />
+    <None Include="bak\FlowChartConnection.cs.bak" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="test\Form3.cs" />
+    <Compile Include="test\Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_port.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_port.Designer.cs">
+      <DependentUpon>Form_port.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inout_port.cs" />
+    <Compile Include="Output_port.cs" />
+    <None Include="bak\Line.cs.bak" />
+    <Compile Include="Input_port.cs" />
+    <Compile Include="Port.cs" />
+    <None Include="bak\Port_old.cs.bak" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="test\Form2.cs" />
+    <Compile Include="Component.cs" />
+    <EmbeddedResource Include="bak\Component_old.resx">
+      <DependentUpon>Component_old.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="test\Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="test\Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_port.resx">
+      <DependentUpon>Form_port.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inout_port.resx">
+      <DependentUpon>Inout_port.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Output_port.resx">
+      <DependentUpon>Output_port.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Input_port.resx">
+      <DependentUpon>Input_port.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Port.resx">
+      <DependentUpon>Port.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bak\Port_old.resx">
+      <DependentUpon>Port_old.cs.bak</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bak\InsideForm.Designer.txt" />
+    <Content Include="bak\Form_BloodPressureMonitor2.txt" />
+    <Content Include="Images\AudioController.png" />
+    <Content Include="Images\BloodPressure.png" />
+    <Content Include="Images\BloodPressureMonitor.png" />
+    <Content Include="Images\BloodPressureSensor.png" />
+    <Content Include="Images\BloodPressureSensorNode.png" />
+    <Content Include="Images\Buffer.png" />
+    <Content Include="Images\DataAnalyzer.bak.png" />
+    <Content Include="Images\DataAnalyzer.png" />
+    <Content Include="Images\DataMemory.png" />
+    <Content Include="Images\DataProcessor.png" />
+    <Content Include="Images\Default.png" />
+    <Content Include="Images\DisplayController.bak.png" />
+    <Content Include="Images\DisplayController.png" />
+    <Content Include="Images\ElectricMachineryController.png" />
+    <Content Include="Images\HeartRate.png" />
+    <Content Include="Images\HeartRateMonitor.png" />
+    <Content Include="Images\HeartRateSensor.png" />
+    <Content Include="Images\HeartRateSensorNode.png" />
+    <Content Include="Images\IoTGateway.png" />
+    <Content Include="Images\IPv6Router.png" />
+    <Content Include="Images\MedicalServer.png" />
+    <Content Include="Images\MicroProcessor.png" />
+    <Content Include="Images\Monitor .png" />
+    <Content Include="Images\Monitor.png" />
+    <Content Include="Images\Patient.png" />
+    <Content Include="Images\port1.png" />
+    <Content Include="Images\port2.png" />
+    <Content Include="Images\ProtocolConverter.png" />
+    <Content Include="Images\RAM.png" />
+    <Content Include="Images\Register.png" />
+    <Content Include="Images\ROM.png" />
+    <Content Include="Images\RouteModule.png" />
+    <Content Include="Images\Temperature.png" />
+    <Content Include="Images\TemperatureMonitor.png" />
+    <Content Include="Images\TemperatureSensor.png" />
+    <Content Include="Images\TemperatureSensorNode.png" />
+    <Content Include="Images\WiredMedia.png" />
+    <Content Include="Images\WiredModule.png" />
+    <Content Include="Images\WirelessMedia.png" />
+    <Content Include="Images\WirelessModule.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxMicrosoft.Office.Interop.VisOcx">
+      <Guid>{F1A8DFE4-BC61-48BA-AFDA-96DF10247AF0}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>2</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="DIAGRAMLAUNCHLib">
+      <Guid>{2D95B6CF-1BC3-4FA8-B52F-474CED0DDD1F}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="LCC11">
+      <Guid>{EDCD5812-6A06-43C3-AFAC-46EF5D14E22C}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>6</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Visio">
+      <Guid>{00021A98-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>4</VersionMajor>
+      <VersionMinor>14</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Visio.SaveAsWeb">
+      <Guid>{50603AED-99E4-4F88-A4EA-3D4C06EC4346}</Guid>
+      <VersionMajor>4</VersionMajor>
+      <VersionMinor>14</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.VisOcx">
+      <Guid>{F1A8DFE4-BC61-48BA-AFDA-96DF10247AF0}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>2</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Netron2.2\Netron\NetronGraphLibrary\NetronGraphLib.csproj">
+      <Project>{95c388c8-dd59-4993-bcc3-14a0862a24d8}</Project>
+      <Name>NetronGraphLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

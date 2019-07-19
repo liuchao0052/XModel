@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="XModel.Component">
+    <Position X="26.75" Y="3.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAgQIAYACAABAAAAEEAEAAAAABgAAIAAA=</HashCode>
+      <FileName>Component.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XModel.Port">
+    <Position X="25.75" Y="1.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAABEAAAABAAAEIAAAAAIMAAAIAAABAIAAIQgA=</HashCode>
+      <FileName>Port.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XModel.BasicLibrary.BloodPressure" Collapsed="true">
+    <Position X="20.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAQABAAAAgAgAAAEAAAAAAAACAAA=</HashCode>
+      <FileName>BasicLibrary\BloodPressure.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XModel.Inout_port" Collapsed="true">
+    <Position X="29" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>Inout_port.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XModel.Input_port" Collapsed="true">
+    <Position X="29" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAIAAAAAAAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>Input_port.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XModel.Output_port" Collapsed="true">
+    <Position X="29" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAAAEAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>Output_port.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XModel.BasicLibrary.WirelessMedia" Collapsed="true">
+    <Position X="22.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BasicLibrary\WirelessMedia.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Netron.GraphLib.Shape" Collapsed="true">
+    <Position X="31" Y="4" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="XModel.BasicLibrary.AudioController" Collapsed="true">
+    <Position X="22.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BasicLibrary\AudioController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XModel.BasicLibrary.BloodPressureSensor" Collapsed="true">
+    <Position X="20.75" Y="4.75" Width="1.5" />
+    <InheritanceLine Type="XModel.Component" ManuallyRouted="true">
+      <Path>
+        <Point X="28" Y="7.47" />
+        <Point X="28" Y="6.927" />
+        <Point X="26.686" Y="6.927" Type="JumpStart" />
+        <Point X="26.519" Y="6.927" Type="JumpEnd" />
+        <Point X="21.5" Y="6.927" />
+        <Point X="21.5" Y="4.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BasicLibrary\BloodPressureSensor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XModel.BasicLibrary.DataAnalyzer" Collapsed="true">
+    <Position X="20.75" Y="6.5" Width="1.5" />
+    <InheritanceLine Type="XModel.Component" ManuallyRouted="true">
+      <Path>
+        <Point X="28" Y="7.47" />
+        <Point X="28" Y="9.7" />
+        <Point X="21.5" Y="9.7" />
+        <Point X="21.5" Y="6.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BasicLibrary\DataAnalyzer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XModel.BasicLibrary.DataMemory" Collapsed="true">
+    <Position X="21.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BasicLibrary\DataMemory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XModel.BasicLibrary.DataProcessor" Collapsed="true">
+    <Position X="22" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BasicLibrary\DataProcessor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XModel.BasicLibrary.DisplayController" Collapsed="true">
+    <Position X="19.75" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BasicLibrary\DisplayController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XModel.BasicLibrary.ElectricMachineryController" Collapsed="true">
+    <Position X="22.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BasicLibrary\ElectricMachineryController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XModel.BasicLibrary.HeartRate" Collapsed="true">
+    <Position X="24.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAQAAAAAAAQAAIAAAAAAYAAAAAAAAA=</HashCode>
+      <FileName>BasicLibrary\HeartRate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XModel.BasicLibrary.HeartRateSensor" Collapsed="true">
+    <Position X="19.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BasicLibrary\HeartRateSensor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XModel.BasicLibrary.MicroProcessor" Collapsed="true">
+    <Position X="22.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BasicLibrary\MicroProcessor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XModel.BasicLibrary.MyBuffer" Collapsed="true">
+    <Position X="24.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BasicLibrary\MyBuffer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XModel.BasicLibrary.ProtocolConverter" Collapsed="true">
+    <Position X="24.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BasicLibrary\ProtocolConverter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XModel.BasicLibrary.RAM" Collapsed="true">
+    <Position X="23.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BasicLibrary\RAM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XModel.BasicLibrary.Register" Collapsed="true">
+    <Position X="25" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BasicLibrary\Register.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XModel.BasicLibrary.ROM" Collapsed="true">
+    <Position X="23.75" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BasicLibrary\ROM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XModel.BasicLibrary.Temperature" Collapsed="true">
+    <Position X="25.5" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAhAAAAAAAAgAAAAAAAAAAAgAAAYAAAAAAAAAAAA=</HashCode>
+      <FileName>BasicLibrary\Temperature.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XModel.BasicLibrary.TemperatureSensor" Collapsed="true">
+    <Position X="24.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BasicLibrary\TemperatureSensor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XModel.BasicLibrary.WiredMedia" Collapsed="true">
+    <Position X="26.25" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BasicLibrary\WiredMedia.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XModel.BasicLibrary.WiredModule" Collapsed="true">
+    <Position X="19.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BasicLibrary\WiredModule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="XModel.BasicLibrary.WirelessModule" Collapsed="true">
+    <Position X="19.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BasicLibrary\WirelessModule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>
